@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockPaperScissors</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+.videoblocks{
+  display: none;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 324px;
+  height: 184px;
+}
+#video{
+  display: none;
+  background-color: burlywood;
+  top: 50px;
+  left: 50px;
+  width: 700px;
+  height: 250px;
+}
+#left{
+  display: none;
+  background-color: green;
+  top: 320px;
+  left: 50px;
+  width: 70px;
+  height: 300px;
+}
+#right{
+  display: none;
+  top: 320px;
+  left: 680px;
+  width: 70px;
+  height: 300px;
+}
+img{
+  cursor: pointer;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+}
+.rights{
+  cursor: auto;
+}
+#hashiv{
+  display: none;
+  width: 300px;
+  height: 100px;
+  font-size: 72px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 5px;
+  top: 320px;
+  left: 250px;
+}
+#winner{
+  display: none;
+  text-align: center;
+  width: 700px;
+  height: 100px;
+  font-size: 72px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 5px;
+  top: 320px;
+  left: 50px;
+  color: red;
+  background-color: seagreen;
+}
+#start{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 700px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: seagreen;
+}
+p{
+  color: rgb(219, 105, 105);
+  font-weight: bold;
+  font-size: 32px;
+  width: 45%;
+}
+input{
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 45%;
+  height: 30px;
+  font-size: 24px;
+}
+#startbutton{
+  text-align: center;
+  background-color: grey;
+  color: rgb(104, 28, 28);
+  width: 120px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.name{
+  width: 45%;
+  height: 45px;
+  display: block;
+  border: 2px solid black;
+  border-radius: 5px;
+  }
+</style>
+<body>
+  <section id="start">
+    <p>First player name</p>
+    <p>Second player name</p>
+    <form name="myForm"  method="post">
+    <input type="text" id="firstpl" name="firstname" placeholder="Input Name">
+    <input type="text" id="secondpl" name="secondname" placeholder="Input Name">
+    </form>
+    <p id="startbutton">START</p>
+  </section>
+  <section id="video">
+    <p class="name"></p>
+    <p class="name"></p>
+    <div class="videoblocks">
+      <video id="video1" src="video/bumagal.mp4" width="320" height="180" autoplay muted>
+      </video>
+    </div>
+    <div class="videoblocks">
+      <video id="video2" src="video/bumagar.mp4" width="320" height="180" autoplay muted>
+      </video>
+    </div>
+  </section>
+  <section id="left">
+    <img class="lefts" src="img/kamen.png" alt="kamen">
+    <img class="lefts" src="img/bumaga.png" alt="bumaga">
+    <img class="lefts" src="img/noj.png" alt="noj">
+  </section>
+  <section id="right">
+    <img class="rights" src="img/kamen.png" alt="kamen">
+    <img class="rights" src="img/bumaga.png" alt="bumaga">
+    <img class="rights" src="img/noj.png" alt="noj">
+  </section>
+  <section id="hashiv">
+   <span id="lefth">0</span><span>:</span><span id="righth">0</span>
+  </section>
+  <section id="winner">Win </section>
+  <script src="index.js"></script>
+</body>
+</html>
