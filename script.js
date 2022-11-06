@@ -12,7 +12,7 @@ aboutmediv=[...aboutmediv];
 let allboxes=[];
 allboxes[0]=fon;
 allboxes[1]=aboutme;
-allboxes[2]=contact;
+allboxes[2]=contacts;
 allboxes[3]=myprojects;
 
 let buttons=[];
@@ -34,4 +34,15 @@ for(let i=0;i<4;i++){
     }
     click(1000).then(()=>allboxes[i].style.transform="scale(1)");
   }
+}
+
+for(let i=0;i<4;i++){
+aboutmediv[i].addEventListener('mouseover', () => {
+  aboutmediv[i].style.opacity="1";
+  for (let j=0;j<4;j++){
+    if(j!=i){
+      aboutmediv[j].style.opacity="0.3";
+    }
+  }
+})
 }
