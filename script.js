@@ -7,6 +7,7 @@ let aboutmebutton=document.getElementById("aboutmebutton");
 let contactsbutton=document.getElementById("contactsbutton");
 let myprojectsbutton=document.getElementById("myprojectsbutton");
 let fon=document.getElementById("fon");
+let info=document.getElementById("info");
 aboutmediv=[...aboutmediv];
 
 let allboxes=[];
@@ -45,4 +46,16 @@ aboutmediv[i].addEventListener('mouseover', () => {
     }
   }
 })
+
 }
+info.addEventListener('mouseover',()=>{
+  console.log(1);
+  for (let i=0;i<4;i++){
+    aboutmediv[i].style.opacity="1";
+  }
+})
+// aboutme.addEventListener('onmouseout',()=>{
+//   for (let i=0;i<4;i++){
+//     aboutmediv[i].style.opacity="1";
+//   }
+// })

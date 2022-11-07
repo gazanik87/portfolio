@@ -170,3 +170,30 @@ section{
     color: rgb(78, 78, 78);
   }
 }
+
+
+@media(max-width:742px){
+  header{
+    ul{
+     li{
+           a{
+            font-size: 14px;
+           }
+     }
+    }
+  }
+  #info{
+    h1{
+      font-size: 30px;
+    }
+  }
+
+  .aboutmediv{
+     width: 93% !important;
+  }
+  #myprojects{
+    h1{
+      font-size: 30px;
+    }
+  }
+}

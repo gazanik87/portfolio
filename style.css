@@ -169,4 +169,19 @@ section {
 #myprojects #git div {
   width: 100px;
   margin: auto;
+}
+
+@media (max-width: 742px) {
+  header ul li a {
+    font-size: 14px;
+  }
+  #info h1 {
+    font-size: 30px;
+  }
+  .aboutmediv {
+    width: 93% !important;
+  }
+  #myprojects h1 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
