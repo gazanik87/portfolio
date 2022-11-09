@@ -30,7 +30,7 @@ header ul li {
 }
 header ul li a {
   cursor: pointer;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -172,11 +172,15 @@ section {
 }
 
 @media (max-width: 742px) {
+  header ul {
+    right: 10px;
+  }
   header ul li a {
     font-size: 14px;
   }
   #info h1 {
     font-size: 30px;
+    padding: 30px;
   }
   .aboutmediv {
     width: 93% !important;
